@@ -28,7 +28,9 @@ jobs:
       - name: Build (if needed)
         run: |
           mkdir dist
-          cp index.html dist/
+          cp *.html dist/
+          cp *.js dist/
+          cp *.css dist/
           # add more cp commands if you have css/js
 
       - name: Upload artifact
