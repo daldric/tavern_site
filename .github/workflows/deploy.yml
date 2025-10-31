@@ -28,7 +28,7 @@ jobs:
       - name: Build
         run: |
           mkdir dist
-          cp * dist/
+          cp -r * dist/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
