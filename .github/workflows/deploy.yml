@@ -25,14 +25,10 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Build (if needed)
+      - name: Build
         run: |
           mkdir dist
-          cp *.html dist/
-          cp *.js dist/
-          cp *.css dist/
-          cp *.csv dist/
-          # add more cp commands if you have css/js
+          cp * dist/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
