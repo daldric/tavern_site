@@ -27,7 +27,7 @@ jobs:
 
       - name: Build
         run: |
-          cp -R * dist/
+          cp -R public/ dist/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
