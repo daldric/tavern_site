@@ -31,6 +31,7 @@ jobs:
           cp *.html dist/
           cp *.js dist/
           cp *.css dist/
+          cp *.csv dist/
           # add more cp commands if you have css/js
 
       - name: Upload artifact
